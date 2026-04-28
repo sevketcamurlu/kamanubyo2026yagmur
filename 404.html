@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sayfa Bulunamadı - 404 | kamanubyo2026</title>
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f0a500'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='%230a0e1a'%3EK%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+  <div class="geo-bg" aria-hidden="true"></div>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo" aria-label="kamanubyo2026 ana sayfasına dön">
+          <span class="logo-dot" aria-hidden="true"></span>
+          kaman<span>ubyo</span>2026
+        </a>
+
+        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menüyü aç">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Ana navigasyon">
+          <li><a href="index.html"       class="nav-link">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html"  class="nav-link">Hakkımızda</a></li>
+          <li><a href="projeler.html"    class="nav-link">Projeler</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="iletisim.html"    class="nav-link">İletişim</a></li>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" style="flex-grow: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding-block: 6rem;">
+    <div class="container">
+      <h1 style="font-family: var(--font-display); font-size: clamp(6rem, 15vw, 10rem); font-weight: 800; color: transparent; -webkit-text-stroke: 2px var(--color-accent); line-height: 1; margin-bottom: 1rem; letter-spacing: -0.05em;">
+        404
+      </h1>
+      <h2 style="font-family: var(--font-display); font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 700; color: var(--color-white); margin-bottom: 1rem;">
+        Kayboldunuz Galiba!
+      </h2>
+      <p style="color: var(--color-text-muted); font-size: 1.05rem; max-width: 46ch; margin-inline: auto; margin-bottom: 2.5rem; line-height: 1.7;">
+        Dijital dünyada bazen yollar karışabilir. Ulaşmaya çalıştığınız sayfa taşınmış, ismi değiştirilmiş veya tamamen silinmiş olabilir. 
+      </p>
+      <a href="index.html" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1rem;">
+        Ana Sayfaya Dönüş Yap
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" style="margin-top: 0;">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0; justify-content: center;">
+        <p>© 2026 <a href="index.html">kamanubyo2026</a>. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('.site-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
