@@ -1,0 +1,15 @@
+{
+  "name": "kamanubyo2026",
+  "short_name": "kamanubyo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#f0a500",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
